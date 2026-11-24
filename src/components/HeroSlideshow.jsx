@@ -21,7 +21,7 @@ export default function HeroSlideshow({ games, interval = 4000 }) {
     const game = games[current];
     return (
         <div
-            className="relative aspect-[4/3] overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900"
+            className="relative aspect-4/3 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
@@ -37,7 +37,7 @@ export default function HeroSlideshow({ games, interval = 4000 }) {
                 />
             ))}
 
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-5 pt-16">
+            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-zinc-950 via-zinc-950/70 to-transparent p-5 pt-16">
                 <Link href={`/games/${game.id}`} className="group block">
                     <p className="text-xl font-bold text-zinc-50 group-hover:text-lime-300">{game.title}</p>
                     <p className="mt-1 text-sm text-zinc-300">
