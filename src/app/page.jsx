@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/ssr";
 import { games, platforms } from "@/data/games";
 import Button from "@/components/Button";
+import GameCard from "@/components/GameCard";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import { PlatformIcon } from "@/components/PlatformBadge";
 export const metadata = {
@@ -40,6 +41,9 @@ export default function HomePage() {
             See all games
             <ArrowRight size={14} weight="bold"/>
           </Link>
+        </div>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          {featuredGames.map((game) => (<GameCard key={game.id} game={game}/>))}
         </div>
       </section>
 
