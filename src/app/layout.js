@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
         <footer className="mt-auto border-t border-zinc-800 bg-zinc-950">
           <div className="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-zinc-400">
-            <p>© 2026 GameHub. CS4032 Web Programming project.</p>
-            <p className="mt-1">This is a demo store. No real payments are made.</p>
+            <p>© 2026 GameHub.</p>
+            <p className="mt-1">Get games at best price.</p>
           </div>
         </footer>
       </body>
